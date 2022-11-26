@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+body {
+
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+}
+
+nav {
+  z-index: 1;
+  display: flex;
+  width: 90%;
+  max-width: 1000px;
+  align-self: center;
+  position: fixed;
+  top: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 10px;
+  background-color: #D9D4CC;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+nav img {
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  color: black;
+  font-style: italic;
+}
+
+#section2 h1 {
+  font-style: italic;
+}
+
+@media only screen and (max-width: 550px) {
+  body {
+    background-color: #336666;
+  }
+  #section2 {
+    margin-top: 60px;
+    background-image: url(img/ca-bg2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #D9D4CC;
+    display: flex;
+    justify-content: center;
+  }
+  .gallerycontainer {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 90px 180px 180px 180px 180px 180px 180px 180px 180px 180px 180px 180px 180px;
+  }
+
+  .gallerycontainer div {
+    margin: 10px;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
+  }
+  .gallerycontainer img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .hovereffect {
+    position: relative;
+    overflow: hidden;
+  }
+  .hovereffect > .content {
+    margin: -10px;
+    text-align: center;
+    position: absolute;
+    inset: 0;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hovereffect > img,
+  .hovereffect > .content {
+    transition: 300ms ease-in-out;
+  }
+  .hovereffect:hover > .content.fade {
+    opacity: 0;
+  }
+  .hovereffect > .content.fade {
+    opacity: 0;
+  }
+  .hovereffect:hover > .content.fade {
+    opacity: 1;
+  }
+  .hovereffect:hover > img.blur {
+    filter: blur(5px);
+  }
+
+  .galleryheader {
+    height: 80px;
+    grid-column: span 2;
+    text-align: center;
+  }
+  .galleryheader h1 {
+    letter-spacing: 1px;
+    font-size: 40px;
+  }
+  #pueblo {
+    grid-column: span 1;
+    grid-row: 2;
+  }
+  #quail {
+    grid-column: span 1;
+    grid-row: 2;
+  }
+  #owl {
+    grid-column: span 1;
+    grid-row: 3;
+  }
+  #pueblo-alt {
+    grid-column: span 1;
+    grid-row: 3;
+  }
+  #ivyframe {
+    grid-column: span 1;
+    grid-row: 4;
+  }
+  #quail-only {
+    grid-column: span 1;
+    grid-row: 4;
+  }
+  #copper-sheet-mirror {
+    grid-column: span 2;
+    grid-row: 5 / span 2;
+  }
+  #ivypoll {
+    grid-column: span 2;
+    grid-row: 7 / span 3;
+  }
+  #coatrackinaction {
+    grid-column: span 2;
+    grid-row: 10 / span 2;
+  }
+  #coatrack {
+    grid-column: span 1;
+    grid-row: 12;
+  }
+  #vine {
+    grid-column: span 1;
+    grid-row: 12;
+  }
+  #vinewhiteframe {
+    grid-column: span 1;
+  }
+  #pricklypear {
+    grid-column: span 1;
+  }
+}
+
+@media only screen and (min-width: 551px) {
+  body {
+    background-color: #336666;
+  }
+  #section2 {
+    margin-top: 60px;
+    background-image: url(img/ca-bg2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #D9D4CC;
+    display: flex;
+    justify-content: center;
+  }
+  .gallerycontainer {
+    margin-top: 15px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 90px repeat(9, 200px);
+  }
+  .gallerycontainer div {
+    margin: 10px;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
+  }
+  .gallerycontainer img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .hovereffect {
+    position: relative;
+    overflow: hidden;
+  }
+  .hovereffect > .content {
+    margin: -10px;
+    text-align: center;
+    position: absolute;
+    inset: 0;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hovereffect > img,
+  .hovereffect > .content {
+    transition: 300ms ease-in-out;
+  }
+  .hovereffect:hover > .content.fade {
+    opacity: 0;
+  }
+  .hovereffect > .content.fade {
+    opacity: 0;
+  }
+  .hovereffect:hover > .content.fade {
+    opacity: 1;
+  }
+  .hovereffect:hover > img.blur {
+    filter: blur(5px);
+  }
+
+  .galleryheader {
+    height: 80px;
+    grid-column: span 3;
+    text-align: center;
+  }
+  .galleryheader h1 {
+    letter-spacing: 1px;
+    font-size: 40px;
+  }
+  #pueblo {
+    grid-column: span 1;
+    grid-row: 2 / span 1;
+  }
+  #pueblo-alt {
+    grid-column: 2 / 4;
+    grid-row: 2 / span 2;
+  }
+  #quail {
+    grid-column: span 1;
+    grid-row: 3;
+  }
+  #copper-sheet-mirror {
+    grid-column: span 2;
+    grid-row: 4 / span 2;
+  }
+  #owl {
+    grid-column: span 1;
+    grid-row: 4;
+  }
+  #ivyframe {
+    grid-column: span 1;
+    grid-row: 5;
+  }
+  #quail-only {
+    grid-column: span 1;
+  }
+  #ivypoll {
+    grid-column: span 2;
+    grid-row: 6 / span 3;
+  }
+  #coatrackinaction {
+    grid-column: 2 / span 2;
+    grid-row: span 2;
+  }
+  #coatrack {
+    grid-column: span 1;
+  }
+  #vine {
+    grid-column: span 1;
+    grid-row: 9;
+  }
+  #vinewhiteframe {
+    grid-column: span 1;
+  }
+  #pricklypear {
+    grid-row: 8;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #section2 {
+    margin-top: 60px;
+    
+    background-image: url(img/ca-bg2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #D9D4CC;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .galleryheader {
+    grid-column: span 6;
+    text-align: center;
+  }
+  .galleryheader h1 {
+    letter-spacing: 5px;
+    font-size: 40px;
+  }
+  .gallerycontainer {
+    width: min(1000px);
+    display: grid;
+    justify-content: center;
+    padding-top: 30px;
+    grid-template-columns: repeat( auto-fit, minmax(100px, 1fr) );
+    grid-template-rows: repeat(15, 100px);
+  }
+  .gallerycontainer div {
+    margin: 10px;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
+  }
+  .gallerycontainer img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .hovereffect {
+    position: relative;
+    overflow: hidden;
+  }
+  .hovereffect > .content {
+    margin: -10px;
+    text-align: center;
+    position: absolute;
+    inset: 0;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hovereffect > img,
+  .hovereffect > .content {
+    transition: 300ms ease-in-out;
+  }
+  .hovereffect:hover > .content.fade {
+    opacity: 0;
+  }
+  .hovereffect > .content.fade {
+    opacity: 0;
+  }
+  .hovereffect:hover > .content.fade {
+    opacity: 1;
+  }
+  .hovereffect:hover > img.blur {
+    filter: blur(5px);
+  }
+  
+  #pueblo {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  #quail {
+    min-width: 170px;
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  #owl {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  #pueblo-alt {
+    min-width: 350px;
+    grid-column: span 4;
+    grid-row: span 4;
+  }
+  #ivyframe {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  #copper-sheet-mirror {
+    grid-column: span 6;
+    grid-row: span 5;
+  }
+  #ivypoll {
+    grid-column: span 6;
+    grid-row: span 8;
+  }
+  #coatrackinaction {
+    grid-column: span 4;
+    grid-row: span 6;
+  }
+  #quail-only {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  #dragonfly {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  #vine {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  #vinewhiteframe {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  #coatrack {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  #pricklypear {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+}
+
+footer{
+  display: flex;
+  justify-content: space-around;
+  background-color: #D9D4CC;
+}
