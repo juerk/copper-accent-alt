@@ -12,7 +12,6 @@ html {
   box-sizing: border-box;
 }
 body {
-
   margin: 0;
   padding: 0;
   display: flex;
@@ -438,4 +437,7 @@ footer{
   display: flex;
   justify-content: space-around;
   background-color: #D9D4CC;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
