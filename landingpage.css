@@ -122,8 +122,9 @@ footer{
   #section1 {
     height: 100%;
     width: 100%;
+    /* background-image: url(img/Sandia-Mountains-New-Mexico.webp); */
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: bottom;
     background-color: #336666;
     color: #F2955E;
     display: flex;

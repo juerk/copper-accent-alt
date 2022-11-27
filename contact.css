@@ -153,9 +153,6 @@ textarea:valid~label{
   justify-content: space-between;
 }
 .contactcard {
-  background-image: url(img/ca-bg2.png);
-  background-repeat: no-repeat;
-  background-size: contain;
   background-color: #336666;
   background-position: top;
   margin-top: 30px;
