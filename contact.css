@@ -8,14 +8,12 @@ html {
   box-sizing: border-box;
 }
 body {
-
   background-color: #F2955E;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-family: 'Playfair Display', serif;
 }
 
 nav {
@@ -60,7 +58,6 @@ nav a:hover {
   height: 100vh;
   margin-top: 60px;
   background-color: #336666;
-
   background-image: url(img/ca-bg3.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -69,10 +66,15 @@ nav a:hover {
 }
 #contact h1 {
   text-align: center;
-  font-size: 75px;
-  font-family: 'Playfair Display', serif;
-  letter-spacing: 10px;
-  color: #F2955E;
+  letter-spacing: 5px;
+  color: black;
+  background-color: #D9D4CC;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-style: italic;
+  border-top: 1px black solid;
+  border-bottom: 1px solid black;
+  
 }
 .contactcontainer {
   padding-top: 30px;

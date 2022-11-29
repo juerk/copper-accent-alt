@@ -61,6 +61,19 @@ nav a:hover {
   font-style: italic;
 }
 
+#galleryheader {
+  margin-top: 40px;
+  text-align: center;
+  font-style: italic;
+  font-size: 20px;
+  background-color: rgba(51, 102, 102, 0.2);
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  color: black;
+  width: 100%;
+  letter-spacing: 5px;
+}
+
 @media only screen and (max-width: 550px) {
   body {
     background-color: #336666;
@@ -72,14 +85,9 @@ nav a:hover {
     background-size: contain;
     background-color: #D9D4CC;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-  }
-  .gallerycontainer {
-    width: 100%;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 90px 180px 180px 180px 180px 180px 180px 180px 180px 180px 180px 180px 180px;
+    align-items: center;
   }
 
   .gallerycontainer div {
@@ -90,7 +98,6 @@ nav a:hover {
     width: 100%;
     height: 100%;
   }
-  
   .hovereffect {
     position: relative;
     overflow: hidden;
@@ -122,43 +129,6 @@ nav a:hover {
     filter: blur(5px);
   }
 
-  .galleryheader {
-    height: 80px;
-    grid-column: span 2;
-    text-align: center;
-  }
-  .galleryheader h1 {
-    letter-spacing: 1px;
-    font-size: 40px;
-  }
-  #pueblo {
-    grid-column: span 1;
-    grid-row: 2;
-  }
-  #quail {
-    grid-column: span 1;
-    grid-row: 2;
-  }
-  #owl {
-    grid-column: span 1;
-    grid-row: 3;
-  }
-  #pueblo-alt {
-    grid-column: span 1;
-    grid-row: 3;
-  }
-  #ivyframe {
-    grid-column: span 1;
-    grid-row: 4;
-  }
-  #quail-only {
-    grid-column: span 1;
-    grid-row: 4;
-  }
-  #copper-sheet-mirror {
-    grid-column: span 2;
-    grid-row: 5 / span 2;
-  }
   #copper-sheet-mirror .content img{
     width: 100%;
     height: 100%;
@@ -178,29 +148,71 @@ nav a:hover {
     padding-right: 20px;
     font-size: 1rem;
    }
-  #ivypoll {
-    grid-column: span 2;
+
+   .gallerycontainer {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(40, 60px);
+  }
+   #copper-sheet-mirror {
+    grid-column: 1 /span 8;
+    grid-row: 1 / span 6;
+  }
+  #pueblo {
+    grid-column: span 4;
     grid-row: 7 / span 3;
   }
-  #coatrackinaction {
-    grid-column: span 2;
-    grid-row: 10 / span 2;
+  #pueblo-alt {
+    grid-column: 2 / span 6;
+    grid-row: 10 /span 5;
   }
-  #coatrack {
-    grid-column: span 1;
-    grid-row: 12;
+  #quail {
+    grid-column: span 4;
+    grid-row: 7 / span 3;
+  }
+  #owl {
+    grid-column: span 4;
+    grid-row: 15 / span 3;
+  }
+  #quail-only {
+    grid-column: span 4;
+    grid-row: 15 / span 3;
+  }
+  #ivypoll {
+    grid-column: span 8;
+    grid-row:  18 / span 8;
+  }
+  #ivyframe {
+    grid-column: span 3;
+    grid-row: 26 / span 3;
   }
   #vine {
-    grid-column: span 1;
-    grid-row: 12;
+    grid-column: span 3;
+    grid-row: 29 / span 3;
+  }
+  #coatrackinaction {
+    grid-column: span 5;
+    grid-row: 26 / span 6;
+  }
+  #coatrack {
+    grid-column: span 8;
+    grid-row: 32 / span 5;
   }
   #vinewhiteframe {
-    grid-column: span 1;
+    grid-column: span 4;
+    grid-row: 37 / span 3;
   }
   #pricklypear {
-    grid-column: span 1;
+    grid-column: span 4;
+    grid-row: 37 / span 3;
   }
 }
+
+
+
+
 
 @media only screen and (min-width: 551px) {
   body {
@@ -213,15 +225,11 @@ nav a:hover {
     background-size: contain;
     background-color: #D9D4CC;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
-  .gallerycontainer {
-    margin-top: 15px;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 90px repeat(9, 200px);
-  }
+
   .gallerycontainer div {
     margin: 10px;
     box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
@@ -262,32 +270,29 @@ nav a:hover {
     filter: blur(5px);
   }
 
-  .galleryheader {
-    height: 80px;
-    grid-column: span 3;
-    text-align: center;
-  }
-  .galleryheader h1 {
-    letter-spacing: 1px;
-    font-size: 40px;
+  .gallerycontainer {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: (20, 200px);
   }
   #pueblo {
-    grid-column: span 1;
-    grid-row: 2 / span 1;
-  }
-  #pueblo-alt {
-    grid-column: 2 / 4;
-    grid-row: 2 / span 2;
+    grid-column: span 4;
+    grid-row: 1;
   }
   #quail {
-    grid-column: span 1;
-    grid-row: 3;
+    grid-column: span 4;
+    grid-row: 1;
+  }
+  #pueblo-alt {
+    grid-column: span 8;
+    grid-row: 4;
   }
   #copper-sheet-mirror {
-    grid-column: span 2;
-    grid-row: 4 / span 2;
+    grid-column: span 5;
+    grid-row: 2 / span 2;
   }
-  #copper-sheet-mirror .content img{
+  #copper-sheet-mirror .content img {
     width: 100%;
     height: 100%;
   }
@@ -306,64 +311,51 @@ nav a:hover {
     padding-right: 20px;
     font-size: 1rem;
    }
-  #owl {
-    grid-column: span 1;
-    grid-row: 4;
+   #owl {
+    grid-column: span 3;
+    grid-row: 2;
   }
   #ivyframe {
-    grid-column: span 1;
-    grid-row: 5;
-  }
-  #quail-only {
-    grid-column: span 1;
+    grid-column: span 3;
+    grid-row: 3;
   }
   #ivypoll {
-    grid-column: span 2;
-    grid-row: 6 / span 3;
+    grid-column: span 8;
+    grid-row: 6;
   }
-  #coatrackinaction {
-    grid-column: 2 / span 2;
-    grid-row: span 2;
+  #quail-only {
+    grid-column: span 4;
   }
   #coatrack {
-    grid-column: span 1;
+    grid-column: span 4;
+  }
+  #coatrackinaction {
+    grid-column: span 4;
+    grid-row: 7;
   }
   #vine {
-    grid-column: span 1;
-    grid-row: 9;
+    grid-column: span 4;
+    grid-row: 7;
   }
   #vinewhiteframe {
-    grid-column: span 1;
+    grid-column: span 4;
   }
   #pricklypear {
-    grid-row: 8;
+    grid-column: span 4;
   }
 }
 
 
 
 @media only screen and (min-width: 1000px) {
-  #section2 {
-    margin-top: 60px;
-    background-image: url(img/ca-bg2.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: #D9D4CC;
-  }
-  
-  .galleryheader {
-    grid-column: span 6;
-    text-align: center;
-  }
-  .galleryheader h1 {
-    letter-spacing: 5px;
-    font-size: 40px;
+
+  #galleryheader {
+    margin-top: 40px;
   }
   .gallerycontainer {
     width: min(1000px);
     display: grid;
     justify-content: center;
-    padding-top: 30px;
     grid-template-columns: repeat( auto-fit, minmax(100px, 1fr) );
     grid-template-rows: repeat(15, 100px);
   }
@@ -448,7 +440,6 @@ nav a:hover {
     flex-wrap: wrap;
   }
   #copper-sheet-mirror .content span {
-
     padding-bottom: 20px;
     font-size: 20px;
    }
@@ -494,3 +485,26 @@ footer{
   bottom: 0;
   width: 100%;
 }
+
+
+
+
+
+
+
+  /* #contactblurb {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    box-shadow: none;
+    grid-column: span 3;
+    grid-row: 5;
+    color: white;
+    background-color: #336666;
+  }
+  #contactblurb a {
+    color: white;
+    font-size: large;
+    font-weight: bolder;
+  } */
