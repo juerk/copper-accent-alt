@@ -74,7 +74,355 @@ nav a:hover {
   letter-spacing: 5px;
 }
 
-@media only screen and (max-width: 550px) {
+.hovereffect {
+  position: relative;
+  overflow: hidden;
+}
+.hovereffect > .content {
+  margin: -10px;
+  text-align: center;
+  position: absolute;
+  inset: 0;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+  display: flex;
+  justify-content: center;
+}
+.hovereffect > img,
+.hovereffect > .content {
+  transition: 300ms ease-in-out;
+}
+.hovereffect:hover > .content.fade {
+  opacity: 0;
+}
+.hovereffect > .content.fade {
+  opacity: 0;
+}
+.hovereffect:hover > .content.fade {
+  opacity: 1;
+}
+.hovereffect:hover > img.blur {
+  filter: blur(5px);
+}
+
+
+#copper-sheet-mirror .content img{
+  width: 100%;
+  height: 100%;
+}
+#copper-sheet-mirror .content div {
+  margin-top: 20px;
+  width: 40%;
+  height: 35%;
+}
+#copper-sheet-mirror .content {
+  display: flex;
+  flex-wrap: wrap;
+}
+#coatrack .content span {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1rem;
+}
+#coatrack .content img{
+  width: 100%;
+  height: 100%;
+}
+#coatrack .content div {
+  margin-top: 20px;
+  width: 40%;
+  height: 35%;
+}
+#coatrack .content {
+  display: flex;
+  flex-wrap: wrap;
+}
+#coatrack .content span {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1rem;
+}
+#coatrackinaction .content span {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1rem;
+}
+#coatrackincaction .content img{
+  width: 100%;
+  height: 100%;
+}
+#coatrackinaction .content div {
+  margin-top: 20px;
+  width: 40%;
+  height: 35%;
+}
+#coatrackinaction .content {
+  display: flex;
+  flex-wrap: wrap;
+}
+#coatrackinaction .content span {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1rem;
+}
+#vinewhiteframe .content span {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1rem;
+}
+#vinewhiteframe  .content img{
+  width: 100%;
+  height: 100%;
+}
+#vinewhiteframe  .content div {
+  margin-top: 20px;
+  width: 40%;
+  height: 35%;
+}
+#vinewhiteframe  .content {
+  display: flex;
+  flex-wrap: wrap;
+}
+#vinewhiteframe .content span {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1rem;
+}
+#vineturquoiseframe .content span {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1rem;
+}
+#vineturquoiseframe  .content img{
+  width: 100%;
+  height: 100%;
+}
+#vineturquoiseframe  .content div {
+  margin-top: 20px;
+  width: 40%;
+  height: 35%;
+}
+#vineturquoiseframe  .content {
+  display: flex;
+  flex-wrap: wrap;
+}
+#vineturquoiseframe .content span {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1rem;
+}
+#pueblo .content span {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1rem;
+}
+#pueblo  .content img{
+  width: 100%;
+  height: 100%;
+}
+#pueblo  .content div {
+  margin-top: 20px;
+  width: 40%;
+  height: 35%;
+}
+#pueblo  .content {
+  display: flex;
+  flex-wrap: wrap;
+}
+#pueblo .content span {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1rem;
+}
+#pueblo-alt .content span {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1rem;
+}
+#pueblo-alt   .content img{
+  width: 100%;
+  height: 100%;
+}
+#pueblo-alt  .content div {
+  margin-top: 20px;
+  width: 40%;
+  height: 35%;
+}
+#pueblo-alt   .content {
+  display: flex;
+  flex-wrap: wrap;
+}
+#pueblo-alt  .content span {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1rem;
+}
+#quail .content span {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1rem;
+}
+#quail   .content img{
+  width: 100%;
+  height: 100%;
+}
+#quail  .content div {
+  margin-top: 20px;
+  width: 40%;
+  height: 35%;
+}
+#quail  .content {
+  display: flex;
+  flex-wrap: wrap;
+}
+#quail  .content span {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1rem;
+}
+#ivypoll .content span {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1rem;
+}
+#ivypoll   .content img{
+  width: 100%;
+  height: 100%;
+}
+#ivypoll .content div {
+  margin-top: 20px;
+  width: 40%;
+  height: 35%;
+}
+#ivypoll  .content {
+  display: flex;
+  flex-wrap: wrap;
+}
+#ivypoll  .content span {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1rem;
+}
+#owl .content span {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1rem;
+}
+#owl  .content img{
+  width: 100%;
+  height: 100%;
+}
+#owl .content div {
+  margin-top: 20px;
+  width: 40%;
+  height: 35%;
+}
+#owl  .content {
+  display: flex;
+  flex-wrap: wrap;
+}
+#owl .content span {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1rem;
+}
+#quail-only .content span {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1rem;
+}
+#quail-only  .content img{
+  width: 100%;
+  height: 100%;
+}
+#quail-only .content div {
+  margin-top: 20px;
+  width: 40%;
+  height: 35%;
+}
+#quail-only .content {
+  display: flex;
+  flex-wrap: wrap;
+}
+#quail-only .content span {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1rem;
+}
+#vine .content span {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1rem;
+}
+#vine  .content img{
+  width: 100%;
+  height: 100%;
+}
+#vine .content div {
+  margin-top: 20px;
+  width: 40%;
+  height: 35%;
+}
+#vine .content {
+  display: flex;
+  flex-wrap: wrap;
+}
+#vine .content span {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1rem;
+}
+#pricklypear .content span {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1rem;
+}
+#pricklypear  .content img{
+  width: 100%;
+  height: 100%;
+}
+#pricklypear .content div {
+  margin-top: 20px;
+  width: 40%;
+  height: 35%;
+}
+#pricklypear .content {
+  display: flex;
+  flex-wrap: wrap;
+}
+#pricklypear .content span {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1rem;
+}
+
+
+
+@media only screen and (max-width: 600px) {
   body {
     background-color: #336666;
   }
@@ -89,7 +437,6 @@ nav a:hover {
     justify-content: center;
     align-items: center;
   }
-
   .gallerycontainer div {
     margin: 10px;
     box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
@@ -98,6 +445,192 @@ nav a:hover {
     width: 100%;
     height: 100%;
   }
+  #galleryheader {
+    margin-top: 20px;
+  }
+  
+  .gallerycontainer {
+    width: 100%;
+    max-width: 450px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(42, 65px);
+  }
+   #copper-sheet-mirror {
+    grid-column: 1 /span 8;
+    grid-row: 1 / span 6;
+  }
+  #pueblo {
+    grid-column: span 4;
+    grid-row: 7 / span 3;
+  }
+  #pueblo-alt {
+    grid-column:  span 8;
+    grid-row: 10 /span 5;
+  }
+  #quail {
+    grid-column: span 4;
+    grid-row: 7 / span 3;
+  }
+  #owl {
+    grid-column: span 4;
+    grid-row: 15 / span 3;
+  }
+  #quail-only {
+    grid-column: span 4;
+    grid-row: 15 / span 3;
+  }
+  #ivypoll {
+    grid-column: span 8;
+    grid-row:  18 / span 7;
+  }
+  #vineturquoiseframe {
+    grid-column: span 4;
+    grid-row: 25 / span 3;
+  }
+  #vine {
+    grid-column: span 4;
+    grid-row: 39 / span 3;
+
+  }
+  #coatrackinaction {
+    grid-column: span 8;
+    grid-row: 28 / span 6;
+  }
+  #coatrack {
+    grid-column: span 8;
+    grid-row: 34 / span 5;
+  }
+  #vinewhiteframe {
+    grid-column: span 4;
+    grid-row: 25 / span 3;
+  }
+  #pricklypear {
+    grid-column: span 4;
+    grid-row: 39 / span 3;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1199px) {
+  body {
+    background-color: #336666;
+  }
+  #section2 {
+    margin-top: 60px;
+    background-image: url(img/ca-bg2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #D9D4CC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .gallerycontainer div {
+    margin: 10px;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
+  }
+  .gallerycontainer img {
+    width: 100%;
+    height: 100%;
+  }
+  #galleryheader {
+    margin-top: 20px;
+  }
+  
+  .gallerycontainer {
+    width: 100%;
+    max-width: 900px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(36, 65px);
+  }
+   #copper-sheet-mirror {
+    grid-column: 1 /span 6;
+    grid-row: 1 / span 8;
+  }
+  #pueblo {
+    grid-column: span 5;
+    grid-row: 1 / span 4;
+  }
+  #quail {
+    grid-column: span 5;
+    grid-row: 5 / span 4;
+  }
+  #pueblo-alt {
+    grid-column: 5 /  span 8;
+    grid-row: 9 / span 6;
+  }
+  #owl {
+    grid-column: span 4;
+    grid-row: 9 / span 4;
+  }
+  #quail-only {
+    grid-column: span 4;
+    grid-row: 13 / span 4;
+  }
+  #ivypoll {
+    grid-column: 5 / span 6;
+    grid-row:  15 / span 10;
+  }
+  #vineturquoiseframe {
+    grid-column: span 4;
+    grid-row: 17 / span 4;
+  }
+  #vinewhiteframe {
+    grid-column: span 4;
+    grid-row: 21 / span 4;
+  }
+  #coatrackinaction {
+    grid-column: 5 / span 6;
+    grid-row: 25 / span 6;
+  }
+  #coatrack {
+    grid-column: 5 /span 6;
+    grid-row: 31 / span 5;
+  }
+  #pricklypear {
+    grid-column: 1 / span 4;
+    grid-row: 25 / span 5;
+  }
+  #vine {
+    grid-column: 1 / span 4;
+    grid-row: 30 / span 6;
+  }
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+  body {
+    background-color: #336666;
+  }
+  #galleryheader {
+    margin-top: 35px;
+  }
+  #section2 {
+    outline: red;
+    margin-top: 60px;
+    background-image: url(img/ca-bg2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #D9D4CC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .gallerycontainer div {
+    margin: 10px;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
+  }
+  .gallerycontainer img {
+    width: 100%;
+    height: 100%;
+  }
+  
   .hovereffect {
     position: relative;
     overflow: hidden;
@@ -110,6 +643,7 @@ nav a:hover {
     font-size: 20px;
     background-color: rgba(255, 255, 255, 0.4);
     display: flex;
+    align-items: center;
     justify-content: center;
   }
   .hovereffect > img,
@@ -128,28 +662,101 @@ nav a:hover {
   .hovereffect:hover > img.blur {
     filter: blur(5px);
   }
+  
 
-  #copper-sheet-mirror .content img{
+  .gallerycontainer {
+    max-width: 1400px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(35, 90px);
+  }
+  #copper-sheet-mirror {
+    grid-column: span 8;
+    grid-row: 1 / span 8;
+  }
+  #pueblo-alt {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 4;
+  }
+  #pueblo {
+    grid-column: span 4;
+    grid-row: 5 / span 4;
+  }
+  #quail {
+    grid-column: span 4;
+    grid-row: span 4;
+  }
+  #ivypoll {
+    grid-column: span 8;
+    grid-row: span 8;
+  }
+  #owl {
+    grid-column: span 4;
+    grid-row: span 4;
+  }
+  #vineturquoiseframe {
+    grid-column: span 4;
+    grid-row: span 4;
+  }
+  #vinewhiteframe {
+    grid-column: span 4;
+    grid-row: 17 / span 4;
+  }
+
+  #coatrackinaction {
+    grid-column: span 6;
+    grid-row: 21 / span 5;
+  }
+  #coatrack {
+    grid-column: span 6;
+    grid-row:  26 / span 5;
+  }
+  #quail-only {
+    grid-column: span 4;
+    grid-row: span 4;
+  }
+  #vine {
+    grid-column: span 6;
+    grid-row:  21 / span 5;
+  }
+  #pricklypear {
+    grid-column: span 6;
+    grid-row:  span 5;
+  }
+}
+
+
+ 
+
+/* @media only screen and (max-width: 550px) {
+  body {
+    background-color: #336666;
+  }
+  #section2 {
+    margin-top: 60px;
+    background-image: url(img/ca-bg2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #D9D4CC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .gallerycontainer div {
+    margin: 10px;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
+  }
+  .gallerycontainer img {
     width: 100%;
     height: 100%;
   }
-  #copper-sheet-mirror .content div {
-    margin-top: 20px;
-    width: 40%;
-    height: 35%;
+  #galleryheader {
+    margin-top: 10px;
   }
-  #copper-sheet-mirror .content {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  #copper-sheet-mirror .content span {
-    margin-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 1rem;
-   }
-
-   .gallerycontainer {
+  
+  .gallerycontainer {
     width: 100%;
     display: grid;
     justify-content: center;
@@ -184,7 +791,7 @@ nav a:hover {
     grid-column: span 8;
     grid-row:  18 / span 8;
   }
-  #ivyframe {
+  #vineturquoiseframe {
     grid-column: span 3;
     grid-row: 26 / span 3;
   }
@@ -292,30 +899,12 @@ nav a:hover {
     grid-column: span 5;
     grid-row: 2 / span 2;
   }
-  #copper-sheet-mirror .content img {
-    width: 100%;
-    height: 100%;
-  }
-  #copper-sheet-mirror .content div {
-    margin-top: 20px;
-    width: 40%;
-    height: 40%;
-  }
-  #copper-sheet-mirror .content {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  #copper-sheet-mirror .content span {
-    margin-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 1rem;
-   }
+
    #owl {
     grid-column: span 3;
     grid-row: 2;
   }
-  #ivyframe {
+  #vineturquoiseframe {
     grid-column: span 3;
     grid-row: 3;
   }
@@ -347,7 +936,7 @@ nav a:hover {
 
 
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1500px) {
 
   #galleryheader {
     margin-top: 40px;
@@ -418,7 +1007,7 @@ nav a:hover {
     grid-column: span 4;
     grid-row: span 4;
   }
-  #ivyframe {
+  #vineturquoiseframe {
     grid-column: span 2;
     grid-row: span 2;
   }
@@ -475,7 +1064,7 @@ nav a:hover {
     grid-column: span 2;
     grid-row: span 2;
   }
-}
+} */
 
 footer{
   display: flex;
