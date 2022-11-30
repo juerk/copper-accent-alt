@@ -23,7 +23,7 @@ body {
 nav {
   z-index: 1;
   display: flex;
-  width: 90%;
+  width: 95%;
   max-width: 1000px;
   align-self: center;
   position: fixed;

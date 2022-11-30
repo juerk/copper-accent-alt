@@ -140,12 +140,14 @@ nav a:hover {
 }
 #amapola {
   text-align: center;
-  border: 5px solid #336666;
+  border-bottom: 5px solid #336666;
+  border-top: 5px solid #336666;
   padding-bottom: 10px;
 }
 #contactorders{
   text-align: center;
-  border: 5px solid #336666;
+  border-bottom: 5px solid #336666;
+  border-top: 5px solid #336666;
   padding-bottom: 10px;
 }
 

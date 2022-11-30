@@ -104,7 +104,6 @@ nav a:hover {
     color: #022859;
     border-bottom: 1px solid #022859;
     letter-spacing: 5px;
-
   }
 }
 
@@ -133,7 +132,7 @@ nav a:hover {
   text-align: center;
   font-size: 25px;
 }
-.mission {
+/* .mission {
   padding-top: 20px;
   margin-bottom: 10px;
   text-align: center;
@@ -143,7 +142,7 @@ nav a:hover {
   font-size: 20px;
   color: black;
   color: #022859;
-}
+} */
 
 
 .kurtintro {
@@ -163,21 +162,21 @@ nav a:hover {
 .intro img {
   padding-top: 10px;
   width: 100%;
-  max-width: 700px;
+  max-width: 900px;
   height: 80%;
 }
 .intro span {
   text-align: center;
   position: relative;
   bottom: 20px;
-  max-width: 700px;
+  max-width: 900px;
   color: #D9D4CC;
   background-color: #022859;
 }
 
 .began {
   width: 100%;
-  max-width: 600px;
+  max-width: 900px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -189,7 +188,7 @@ nav a:hover {
 }
 .chimney {
   width: 100%;
-  max-width: 1000px;
+  max-width: 900px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -197,20 +196,21 @@ nav a:hover {
 }
 .chimney img {
   padding-bottom: 5px;
-  width: 300px;
+  width: 100%;
+  max-width: 600px;
   padding: 20px;
 }
 .chimney span {
-  
   width: 300px;
   padding: 2px;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
 video {
   margin-top: 20px;
   width: 100%;
-  max-width: 700px;
+  max-width: 900px;
   
 }
 
